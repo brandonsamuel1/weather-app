@@ -1,6 +1,5 @@
 const path = require('path')
 const express = require('express')
-const request = require('request')
 const hbs = require('hbs')
 
 const PORT = process.env.PORT || 3000
