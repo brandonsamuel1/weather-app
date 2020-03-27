@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Welcome</title>
 </head>
 
 <body>
-    {{>header}}
+    <div class="main-content">
+        {{>header}}
+        <p>Search a location</p>
+        <form action="">
+            <input type="text" placeholder="ex. Vancouver">
+            <button>Search</button>
+        </form>
+        <p class="msg-one"></p>
+        <p class="msg-two"></p>
 
-
+    </div>
     {{>footer}}
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
