@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
     })
 })
 
+// ROUTE TO MAKE API CALLS TO DARKSKY AND MAPBOX FOR LOCATION AND FORECAST
 app.get('/weather', (req, res) => {
     if (!req.query.location) {
         return res.send({
