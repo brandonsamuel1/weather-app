@@ -4,13 +4,17 @@
   "description": "Simple weather app using a weather api",
   "main": "index.js",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "hbs": "^4.1.0",
     "request": "^2.88.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "author": "Brandon Samuel",
   "license": "ISC"
